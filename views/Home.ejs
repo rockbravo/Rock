@@ -1,62 +1,157 @@
-<h1><%= title %></h1>
-
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-    <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
-    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-      <h1 class="w3-xxlarge">Welcome To Rock's Convenience Store/h1>
-    </div>
-  </header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-    <!-- About Section -->
-    <div class="w3-row w3-padding-64" id="about">
-      <div class="w3-col m6 w3-padding-large w3-hide-small">
-       <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-      </div>
-  
-      <div class="w3-col m6 w3-padding-large">
-        <h1 class="w3-center">About Rock's Convenience Store</h1><br>
-        <h5 class="w3-center">Tradition since 1889</h5>
-        <p class="w3-large">The Catering was founded in Georgetown by 4 extraordinary MBA students set on a mission to better the lives of MBA students. Our promise
-            to every body.
-            Living mighty. Living long. Living fit. Every person has a different definition of what it means to live well—and at GNC—we see that as something worth celebrating.
-            
-            Whether you're just getting started, or you need to keep going, GNC is committed to sparking your motivation and supporting your desire to live well.</p>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
     
-    <hr>
-
-
-
-<!-- Menu Section -->
-<div class="w3-row w3-padding-64" id="menu">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Our Best Sellers</h1><br>
-      <h4>Flaxseed Oil</h4>
-      <p class="w3-text-grey">1200mg of Cold-Pressed, Organic Flaxseed oil per veggie-softgel</p><br>
-      <button onclick="window.location.href='https://rockapp1.herokuapp.com/products';">
-        Click Here
-      </button>
-      <h4>Honey Almond Granola with Fruits</h4>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h4>Belgian Waffle</h4>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h4>Scrambled eggs</h4>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h4>Blueberry Pancakes</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
-    </div>
-    
-    <div class="w3-col l6 w3-padding-large">
-      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-    </div>
+  <div class="content">
+    <img src="assets/Rock supplement picture.png" alt="Bear" style="width:100%">
+ 
   </div>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+    
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+    
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+    
+    .row {
+      margin: 8px -16px;
+    }
+    
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+    
+    /* Clear floats after rows */ 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <!-- MAIN (Center website) -->
+    <div class="main">
 
-  <hr>
-  <p>Welcome To Rock's Covenience Store</p>
+
+
+    
+  <h1>Rock's Supplement Store</h1>
+  <div>
+    <h3 class="w3-center">Tradition since 2022</h3>
+    <p class="w3-large">Rock's Supplement Co. was founded in Georgetown by 4 extraordinary MBA students set on a mission to better the lives of MBA students. Our promise
+        to every body.
+        Living mighty. Living long. Living fit. Every person has a different definition of what it means to live well—and at GNC—we see that as something worth celebrating.
+        
+        Whether you're just getting started, or you need to keep going, Rock's Supplement Co. is committed to sparking your motivation and supporting your desire to live well.</p>
+</div>
+
+
+
+
+
+    <hr>
+    
+    <h2>Our Best Sellers</h2>
+    <p>Welcome to our store. Below are our best sellers to help you discover your best self.</p>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="assets/Zinc Image.jpg" alt="Mountains" style="width:100%">
+          <h3>Zinc</h3>
+          <p>Zinc Picolinate 50mg with Organic Coconut Oil | Highly Absorbable Zinc Supplement for Healthy Immune Function | Non-GMO Verified, Gluten & Soy Free (60 Liquid Soft gels)</p>
+          <button onclick="window.location.href='https://rockapp1.herokuapp.com/products';">
+            Buy
+          </button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="assets/krill oil.jpg" alt="Lights" style="width:100%">
+          <h3>Krill Oil</h3>
+          <p>Antarctic Krill Oil 1000mg (Double Strength) with Omega-3s EPA & DHA + Astaxanthin | IKOS 5-Star Certified & Non-GMO Verified (60 Softgels)</p>
+          <button onclick="window.location.href='https://rockapp1.herokuapp.com/products';">
+            Buy
+          </button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="assets/Blueberry Concentrate.jpg" alt="Nature" style="width:100%">
+          <h3>Blueberry concentrate</h3>
+          <p>Whole Fruit Blueberry Concentrate Made from Organic Blueberries ~ Non-GMO & Gluten Free (60 Liquid Softgels)</p>
+          <button onclick="window.location.href='https://rockapp1.herokuapp.com/products';">
+            Buy
+          </button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="assets/Garlic Oil.jpg" alt="Mountains" style="width:100%">
+          <h3>Garlic Oil</h3>
+          <p>Odorless Garlic Oil Pills (1000mg) with Parsley & Chlorophyll | Non-GMO Verified, Vegan Certified & Gluten Free (150 PlantGels)</p>
+          <button onclick="window.location.href='https://rockapp1.herokuapp.com/products';">
+            Buy
+          </button>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <div class="content">
+      <img src="assets/Make Your Dream A Reality.png" alt="Bear" style="width:100%">
+      <h3>About Rock's Supplement Store</h3>
+      <p>Since 2020, our family has been dedicated to providing the highest quality health & wellness products, achieved through extensive research and the best ingredients. That's our commitment, from our family to yours.</p>
+    </div>
+
+
+</body>
+</html>
