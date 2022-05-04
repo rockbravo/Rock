@@ -11,6 +11,11 @@ router.get('/about', function(req, res, next) {
   res.render('about');
 });
 
+/* GET about page. */
+router.get('/Home', function(req, res, next) {
+  res.render('Home');
+});
+
 /* GET hello page. */
 router.get('/hello', function(req, res, next) {
   console.log("URL PARAMS:", req.query)
