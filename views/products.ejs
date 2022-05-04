@@ -18,16 +18,7 @@
     BOOTSTRAP GRID
     https://getbootstrap.com/docs/5.0/layout/grid/#row-columns
 -->
-
-
 <div class="container">
-    <div class="row row-cols-2">
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-    </div>
-</div>
     <div class="row">
     <% products.forEach(function(product){ %>
         <div class="col">
@@ -35,7 +26,7 @@
                 BOOTSTRAP CARD
                 https://getbootstrap.com/docs/5.0/components/card/
             -->
-            <div class="card" style="margin-bottom: 5em;">
+            <div class="card" style="margin-bottom: 2em;">
                 <img src="<%= product['url'] %>" class="card-img-top" alt="photo of <%= product['name'] %>">
                 <div class="card-body">
                     <h5 class="card-title"><%= product["name"] %></h5>
